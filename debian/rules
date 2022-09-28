@@ -1,0 +1,6 @@
+#!/usr/bin/make -f
+
+export CTEST_TEST_TIMEOUT=1800
+
+%:
+	dh $@ --buildsystem=cmake

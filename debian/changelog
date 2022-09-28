@@ -1,0 +1,153 @@
+cmark (0.30.2-3) unstable; urgency=medium
+
+  * simple re-release, uploaded source-only to be acceptable for testing
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 27 Oct 2021 04:16:19 +0200
+
+cmark (0.30.2-2) unstable; urgency=medium
+
+  * fix build binary package libcmark0.30.2 (not libcmark0.30.1),
+    and have it break recent broken release of libcmark0.30.1;
+    closes: bug#996887:, thanks to Sebastian Ramacher
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 20 Oct 2021 16:57:49 +0200
+
+cmark (0.30.2-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * simplify source helper script copyright-check
+  * update copyright info:
+    + use Reference field (not License-Reference);
+      tighten lintian overrides
+    + update coverage
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 18 Oct 2021 02:19:52 +0200
+
+cmark (0.30.1-2) unstable; urgency=medium
+
+  * release to unstable
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 19 Aug 2021 22:53:19 +0200
+
+cmark (0.30.1-1) experimental; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * declare compliance with Debian Policy 4.6.0
+  * install to new binary package libcmark0.30.1
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 18 Aug 2021 21:52:53 +0200
+
+cmark (0.30.0-1~exp1) experimental; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * use debhelper compatibility level 13 (not 12)
+  * declare debhelper buildsystem explicitly
+  * copyright info:
+    + update coverage
+    + fix a file reference
+  * drop all patches: applied upstream
+  * new binary package libcmark0.30 (replacing libcmark0.29)
+    to match upstream SONAME bump
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 21 Jun 2021 12:16:45 +0200
+
+cmark (0.29.0-4) unstable; urgency=medium
+
+  * fix export DH_OPTIONS
+  * add patch to extend timeput in pathological test
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 16 Jun 2020 08:31:10 +0200
+
+cmark (0.29.0-3) unstable; urgency=medium
+
+  * update Homepage, Source, and Upstream-Contact URLs;
+    closes: 962576, thanks to Chris Lamb
+  * copyright:
+    + fix distinguish between License-Grant and License-Reference
+      (and non-license disclaimers now omitted)
+    + sort sections, Files above License
+    + use semantic newlines, and newline-separate files
+    + add coverage of recent packaging work
+  * Long descriptions:
+    + use semantic newlines, and strip duplicate text
+    + add comparison to other markdown parsers, and define markdown
+      (inspired by Haskell cmark wrapper description
+      and Wikipedia article on Markdown)
+  * include helper script copyright-check with source
+  * override lintian regarding license in License-Reference field;
+    see bug#786450
+  * simplify rules: stop pass INSTALL_PREFIX,
+    seemingly obsoleted by multiarch patch 1001
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 10 Jun 2020 11:10:44 +0200
+
+cmark (0.29.0-2) unstable; urgency=medium
+
+  * declare compliance with Debian Policy 4.5.0
+  * use debhelper compatibility level 12 (not 11);
+    build-depend on debhelper-compat (not debhelper)
+  * add patch cherry-picked upstream
+    to use html.escape instead of cgi.escape in normalize test,
+    fixing FTBFS;
+    closes: 954541, thanks to Lucas Nussbaum and Hubert Chathi
+  * mark lib* packages Multi-Arch: same
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 30 Mar 2020 19:06:19 +0200
+
+cmark (0.29.0-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * adopt package;
+    closes: bug#948229, thanks to Peter Eisentraut
+  * add git-buildpackage settings:
+    + use pristine-tar and signed tags
+    + avoid any .git files
+    + use DEP-14 branch name
+  * update watch file:
+    + add usage note
+    + use template strings
+  * Add Vcs-* fields: use salsa debian team to track packaging source
+  * set Rules-Requires-Root: no
+  * add patch 1001 to use multiarch install paths;
+    closes: bug#950807, thanks to Helmut Grohne
+  * let dh_installman handle manpage install
+  * fix rename library package to include full unstable API
+  * modernize debhelper: override dh_missing
+    (and drop global option --fail-missing)
+  * fix include license fulltext for CC-BY-SA-4.0 in debian/copyright
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 11 Feb 2020 03:14:09 +0100
+
+cmark (0.28.3-1) unstable; urgency=low
+
+  * New upstream release (closes: #892815)
+  * Update standards version
+  * Fix some lintian warnings
+
+ -- Peter Eisentraut <petere@debian.org>  Sun, 27 May 2018 23:55:25 +0000
+
+cmark (0.26.1-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Add libcmark* packages (Closes: #840727)
+  * Switch to debhelper 11
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 04 Mar 2018 11:53:49 +0100
+
+cmark (0.26.1-1) unstable; urgency=low
+
+  * Initial release (closes: #833682)
+
+ -- Peter Eisentraut <petere@debian.org>  Mon, 05 Sep 2016 01:53:18 +0000
