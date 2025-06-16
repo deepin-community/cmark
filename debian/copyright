@@ -5,7 +5,17 @@ Source: https://github.com/commonmark/cmark/releases
 Files: *
 Copyright:
   2014-2016  John MacFarlane
+License-Grant:
+ BSD2-licensed
 License: BSD-2-clause
+Reference:
+ README.md
+ COPYING
+Comment:
+ Copyright and license is missing from most files.
+ Copyright and license is assumed
+ from project-wide file <README.md>,
+ seemingly confirmed in file <COPYING>.
 
 Files: FindAsan.cmake
 Copyright:
@@ -71,7 +81,7 @@ License: CC-BY-SA-4.0
 
 Files: debian/*
 Copyright:
-  2016-2017, 2020-2021  Jonas Smedegaard <dr@jones.dk>
+  2016-2017, 2020-2022  Jonas Smedegaard <dr@jones.dk>
 License-Grant:
  This packaging is free software;
  you can redistribute it and/or modify it

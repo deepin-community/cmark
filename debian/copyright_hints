@@ -52,6 +52,7 @@ Files: CMakeLists.txt
  debian/patches/README
  debian/rules
  debian/source/format
+ debian/source/lintian-overrides
  debian/source/options
  debian/watch
  man/CMakeLists.txt
@@ -163,14 +164,6 @@ License: UNKNOWN
 
 Files: data/CaseFolding.txt
 Copyright: 2021, UnicodeÂ®, Inc.
-License: UNKNOWN
- FIXME
-
-Files: debian/source/lintian-overrides
-Copyright: debian/copyright Apache-2.0
-  debian/copyright GPL-3+
-  debian/copyright apache-2.0
-  debian/copyright gpl-3+
 License: UNKNOWN
  FIXME
 
