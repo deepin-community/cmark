@@ -1,3 +1,35 @@
+cmark (0.30.2-6) unstable; urgency=medium
+
+  * update git-buildpackage config:
+    + use DEP-14 git branches
+    + enable automatic DEP-14 branch name handling
+    + add usage config
+  * declare compliance with Debian Policy 4.6.2
+  * set Multi-Arch: foreign;
+    closes: bug#1027147, thanks to Andrea Pappacoda
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 31 Dec 2022 11:59:51 +0100
+
+cmark (0.30.2-5) unstable; urgency=medium
+
+  * Revert plain wrong change to shlibs hint file;
+    closes: bug#1004453, thanks to Peter Green
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 28 Jan 2022 10:06:31 +0100
+
+cmark (0.30.2-4) unstable; urgency=medium
+
+  * fix tighten generated shlibs hint file,
+    to reflect that upstream does not yet provide a stable ABI;
+    add related lintian override;
+    closes: bug#1003970, thanks to Gregor Herrmann
+  * update copyright info:
+    + use Reference field for main wildcard Files section;
+      tighten lintian overrides
+    + update coverage
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 18 Jan 2022 19:55:18 +0100
+
 cmark (0.30.2-3) unstable; urgency=medium
 
   * simple re-release, uploaded source-only to be acceptable for testing
